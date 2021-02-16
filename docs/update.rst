@@ -3,7 +3,7 @@ Update
 
 .. NOTE:: We recommend backing up your database with mysqldump before updating the app.
 
-To update the app you just need to copy over the latest code. The app tracks the current version in a file called version.txt, if it notices a change it loads ``/update`` to run the database migrations.
+To update the app you just need to copy over the latest code. You can overwrite the files without worrying of a configuration file being wiped, all config data is stored in the .env file, this makes an update secure. The app tracks the current version in a file called version.txt, if it notices a change it loads ``/update`` to run the database migrations.
 
 https://download.invoiceninja.com
 
